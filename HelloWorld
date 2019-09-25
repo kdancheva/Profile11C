@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+//function prototypes
+void pozdravNewLine(char a[]);
+void pozdrav(char a[]);
+//
+int main(){
+	char name[50];
+	pozdravNewLine("Hello!");
+	pozdravNewLine("My name is Computer.");
+	pozdravNewLine("What's your name?");
+	cin>>name;
+	pozdrav("Welcome to MS Visual Studio, dear ");
+	pozdrav(name);
+	pozdravNewLine("!");
+	pozdravNewLine("Have a nice time with me!");
+	return 0;
+}
+//function description
+void pozdrav(char a[])//function header
+	{
+		cout<<a;
+}
+//
+//function description
+void pozdravNewLine(char a[])//function header
+	{
+		cout<<a<<endl;
+}
+//
